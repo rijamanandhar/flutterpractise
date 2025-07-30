@@ -14,6 +14,7 @@ import 'package:myapp1/login_page2.dart';
 import 'package:myapp1/my_home_page.dart';
 import 'package:myapp1/practise1.dart';
 import 'package:myapp1/provider/login_provider.dart';
+import 'package:myapp1/provider/signup.dart';
 import 'package:myapp1/provider/signuppage.dart';
 import 'package:myapp1/rija.dart';
 import 'package:myapp1/snapchat.dart';
@@ -30,15 +31,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => Signuppage())],
+      providers: [ChangeNotifierProvider(create: (_) => LoginProvider())],
       child: MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: Signuppage(),
+
+        home: Signup(),
       ),
     );
   }
 }
+
+class Signuppage {}

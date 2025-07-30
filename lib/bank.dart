@@ -21,11 +21,7 @@ class Bank extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 16.0),
 
               child: Column(
-                children: [
-                  SizedBox(height: 39),
-                  Text("Good Morning,"),
-                  Icon(Icons.abc),
-                ],
+                children: [SizedBox(height: 39), Text("Good Morning,")],
               ),
             ),
           ],
